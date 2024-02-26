@@ -12,21 +12,21 @@
 
     $f_name = mysqli_real_escape_string($connection, $_POST['f_name']);
     if ($f_name == NULL) {
-        $errors[] = "First name field is empty.";
-    $Subject = mysqli_real_escape_string($connection, $_POST['Subject']);
-    if ($Subject == NULL) {
-        $errors[] = "Last name field is empty.";
-    }
-
+        $errors[] = "Please enter your full name.";
+        
     }
     
     $e_mail = $_POST['e_mail'];
     if ($e_mail == NULL) {
-        $errors[] = "Email field is empty.";
+        $errors[] = "E-mail field is empty.";
     }
-
+    
     if (!filter_var($e_mail, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "\"" . $e_mail . "\" is not a valid email address.";
+    }
+    $c_subject = mysqli_real_escape_string($connection, $_POST['c_subject']);
+    if ($c_subject == NULL) {
+        $errors[] = "Subject Field is empty.";
     }
     
     $comments = mysqli_real_escape_string($connection, $_POST['comments']);
@@ -42,8 +42,8 @@
         }
         echo json_encode(array("errors" => $errmsg));
     } else {
-        $querystring = "INSERT INTO contact_info(contact_id,f_name,e_mail,Subject,comments ) VALUES(NULL,'" . $f_name . "','" . $e_mail . "','" . $Subject . "','" . $comments . "')";
+        $querystring = "INSERT INTO contact_info(contact_id,f_name,e_mail,c_subject,comments ) VALUES(NULL,'" . $f_name . "','" . $e_mail . "','" . $c_subject . "','" . $comments . "')";
         $qpartner = mysqli_query($connection, $querystring);
-        echo json_encode(array("message" => "Form submitted. Thank you for your interest!"));
+        echo json_encode(array("message" => "Form submitted. Thank you, will have a Tea soon!"));
     }
 ?>

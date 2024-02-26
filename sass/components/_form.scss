@@ -1,0 +1,47 @@
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
+    border: 2px solid #FF0000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+form h3 {
+    color: #FF0000;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #000;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
+
+input[type="submit"] {
+    background-color: #FF0000;
+    color: #000;
+    cursor: pointer;
+}
+
+#feedback {
+    color: #FF0000;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
