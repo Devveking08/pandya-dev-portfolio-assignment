@@ -1,0 +1,64 @@
+User Table:
+
+UserID (Primary Key)
+Username
+Email
+
+About Section Table:
+
+SectionID (Primary Key)
+Title
+Description
+UserID (Foreign Key referencing User.UserID)
+
+Download Resume Button Table:
+
+ButtonID (Primary Key)
+ButtonLabel
+LinkURL
+SectionID (Foreign Key referencing About Section.SectionID)
+
+Project Table:
+
+ProjectID (Primary Key)
+Title
+Description
+ImageURL
+UserID (Foreign Key referencing User.UserID)
+
+Case Study Table:
+
+CaseStudyID (Primary Key)
+Title
+Description
+PDFURL
+UserID (Foreign Key referencing User.UserID)
+
+Email & Feedback Table:
+
+FeedbackID (Primary Key)
+Email
+FeedbackText
+UserID (Foreign Key referencing User.UserID)
+Relationships:
+
+
+User to About Section (1-to-1):
+
+This means that for each user on your website, there's only one corresponding "About" section, and vice versa. It's a one-to-one relationship, like each person having a unique ID card.
+
+About Section to Download Resume Button (1-to-1):
+
+In the "About" section, there's just one "Download Resume" button, and this button belongs only to that specific "About" section. It's also a one-to-one relationship, like one key fitting into one lock.
+
+User to Projects (1-to-many):
+
+Each user can have multiple projects associated with them, but each project is linked to only one user. Think of it like a user being a book author, and the books they write are the projects. One author can have many books, but each book belongs to only one author.
+
+User to Case Studies (1-to-many):
+
+Similar to the "Projects" relationship, each user can have multiple case studies, and each case study is linked to one user. It's like a chef who can have many recipes, but each recipe is authored by only one chef.
+
+User to Email & Feedback (1-to-1):
+
+Each user can have one "Email & Feedback" section, and that section is exclusive to that user. It's a one-to-one relationship, like one phone number corresponding to one person.
