@@ -1,0 +1,113 @@
+#projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 15px;
+    background: #332F2F;
+    position: relative; 
+}
+
+    #projects img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ccc; 
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; 
+    animation: fadeIn 1s forwards; 
+
+    }
+
+    #projects h1 {
+    margin-left: 50px;
+    font-family: 'Railway';
+    }
+
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#projects h1 {
+    margin-left: 50px;
+    font-family: 'Railway';
+    animation: slideInLeft 1s forwards; 
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+    #projects-mobile {
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    background: #332F2F;
+    }
+
+
+
+    #projects-mobile h1 {
+    margin-left: 80px;
+    }
+
+    #projects-mobile p {
+    margin-left: 20px;
+    color: white;
+    font-style: italic;
+    text-align:left;
+    }
+
+   
+
+    .button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+
+    .button:hover {
+    background-color: darkred;
+    }
+
+
+
+
+
+    footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+    #footer hr{
+    border: 1px solid red;
+    margin: 20px 0; 
+    transform: translateX(-50%) rotate(90deg);
+    }
+
+    #footer img {
+    margin-right: auto;
+    }
+
+    #footer img:hover {
+    text-decoration: underline ;
+    }
