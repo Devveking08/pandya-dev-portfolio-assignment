@@ -1,6 +1,6 @@
 # pandya-dev-portfolio
 
-# image
+![Site-image](images/temp-site.png)
 
 # Description
 
