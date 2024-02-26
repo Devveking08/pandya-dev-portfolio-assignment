@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 225">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #231f20;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #231f20;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        font-family: Poppins-Bold, Poppins;
+        font-size: 41.79px;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        fill: #ed1d24;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #ed1d24;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <g id="logo-1">
+    <rect class="cls-2" x=".5" y=".5" width="369" height="224"/>
+    <g id="MAIN_LOGO">
+      <rect class="cls-4" x="66" y="36.53" width="249" height="142"/>
+      <rect class="cls-3" x="55" y="102.47" width="186.04" height="86"/>
+      <text class="cls-5" transform="translate(59.57 135.05) scale(1.02 1)"><tspan class="cls-6" x="0" y="0">D</tspan><tspan class="cls-1" x="30.38" y="0">EV</tspan><tspan class="cls-6" x="0" y="50.15">P</tspan><tspan class="cls-1" x="26.08" y="50.15">ANDYA</tspan></text>
+    </g>
+  </g>
+</svg>
