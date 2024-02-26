@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 06, 2024 at 03:58 AM
+-- Generation Time: Feb 26, 2024 at 07:53 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -43,6 +43,35 @@ CREATE TABLE IF NOT EXISTS `aboutsection` (
 
 INSERT INTO `aboutsection` (`SectionID`, `Title`, `Description`, `UserID`) VALUES
 (1, 'Front-end Developer', 'Passionate about creating beautiful and responsive user interfaces.', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_info`
+--
+
+DROP TABLE IF EXISTS `contact_info`;
+CREATE TABLE IF NOT EXISTS `contact_info` (
+  `contact_id` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `f_name` varchar(35) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `e_mail` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `c_subject` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `comments` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  PRIMARY KEY (`contact_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact_info`
+--
+
+INSERT INTO `contact_info` (`contact_id`, `f_name`, `e_mail`, `c_subject`, `comments`) VALUES
+(33, 'Dev', 'd_pandya164813@fanshaweonline.ca', 'REQ', 'I love shanks '),
+(32, 'Dev', 'd_pandya164813@fanshaweonline.ca', 'Assignment REQ', 'Good work'),
+(31, 'Dev', 'd_pandya164813@fanshaweonline.ca', 'Regarding Recent Output', 'Nice one '),
+(30, 'Dev', 'd_pandya164813@fanshaweonline.ca', 'Shanks ', 'Are you working on it ?'),
+(29, 'Dev', 'd_pandya164813@fanshaweonline.ca', 'Submission', 'Thanks '),
+(28, 'dwdwf', 'd_pandya164813@fanshaweonline.ca', 'wfderghetrhrtfjthygfk', 'fefefef'),
+(34, 'Aiden Wotton', 'Aidenwotton@gmail.com', 'Feedback', 'Site looks good, nothing much to say');
 
 -- --------------------------------------------------------
 
