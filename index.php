@@ -29,9 +29,9 @@ $stmt->execute();
             <div class="desktop l-col-span-2 xl-col-span-2 "><img src="images/Dev_Pandya_Logo.png" height="100px" width="150px"></div>
             <nav class="desktop l-col-start-5  l-col-end-13  ">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.php">HOME</a></li>
                     <li><a href="#info">SKILLS</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
@@ -81,10 +81,11 @@ $stmt->execute();
         <section class="grid-con" id="skills">
             <div class="col-span-4 l-col-start-6 l-col-end-12 xl-col-start-6 xl-col-end-12 skills ">
                 <br>
-                <img src="images/html-5.png" height="50px" width="50px" alt="html-5 icon"></img>
-                <img src="images/css-3.png" height="50px" width="50px" alt="html-5 icon"></img>
-                <img src="images/js.png" height="50px" width="50px" alt="html-5 icon"></img>
-                <img src="images/creative-cloud.png" height="50px" width="50px" alt="html-5 icon"></img>
+                <img src="images/php.png" height="50px" width="50px" alt="php-logo">
+                <img src="images/html-5.png" height="50px" width="50px" alt="html-5 icon">
+                <img src="images/css-3.png" height="50px" width="50px" alt="html-5 icon">
+                <img src="images/js.png" height="50px" width="50px" alt="html-5 icon">
+                <img src="images/creative-cloud.png" height="50px" width="50px" alt="html-5 icon">
             </div>
         </section>
         <hr>

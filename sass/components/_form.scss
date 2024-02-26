@@ -1,20 +1,21 @@
 form {
-    max-width: 600px;
+    max-width: 700px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #000;
-    border: 2px solid #FF0000;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #FFF;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
 form h3 {
-    color: #FF0000;
+    color: #FFF;
 }
 
 label {
     display: block;
     margin-top: 10px;
+    color: #FFF;
 }
 
 input {
@@ -23,25 +24,53 @@ input {
     margin-top: 5px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    background-color: #000;
-    border: 1px solid #FF0000;
-    color: #FF0000;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #FFF;
+    color: #FFF;
 }
 
-input[type="submit"] {
-    background-color: #FF0000;
+input[type="submit"], .back-to-home {
+    background-color: #FFF;
     color: #000;
     cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-#feedback {
-    color: #FF0000;
-    margin-top: 10px;
+input[type="submit"]:hover, .back-to-home:hover {
+    border-color: #FFF;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    transform: scale(1.05);
+    background-color: #FF0000;
+    color: #FFF;
 }
 
-@media only screen and (max-width: 600px) {
-    form {
-        max-width: 100%;
-        padding: 10px;
+input[type="submit"]:before, .back-to-home:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, #FFF, #FFF, #FF0000, #FF0000, #FFF, #FFF);
+    background-size: 400% 400%;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input[type="submit"]:hover:before, .back-to-home:hover:before {
+    opacity: 1;
+    animation: glowing-border 1.5s linear infinite; 
+}
+
+@keyframes glowing-border {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
     }
 }
