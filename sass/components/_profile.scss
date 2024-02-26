@@ -1,7 +1,7 @@
 .circular-profile-pic {
     width: 276px;
     height: 277px;
-    background-image: url("images/profile-pic.jpg");
+    background-image: url("../images/profile-pic.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -22,7 +22,7 @@
     }
 
     #about  {
-    background: url('images/main.png') no-repeat center center fixed;
+    background: url('../images/main.png') no-repeat center center fixed;
     background-size: cover;
     padding-top: 40px; 
     padding-bottom: 40px;
