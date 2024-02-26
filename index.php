@@ -79,7 +79,7 @@ $stmt->execute();
         <h1>WHAT I KNOW  </h1>
         <hr>
         <section class="grid-con" id="skills">
-            <div class="col-span-4 l-col-start-6 l-col-end-12 xl-col-start-6 xl-col-end-12 skills ">
+            <div class="col-span-4 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 skills ">
                 <br>
                 <img src="images/php.png" height="50px" width="50px" alt="php-logo">
                 <img src="images/html-5.png" height="50px" width="50px" alt="html-5 icon">
