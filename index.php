@@ -48,10 +48,10 @@ $stmt->execute();
                 <nav class="mobile-nav">
                     <h2 class="hidden">Main Navigation</h2>
                     <ul class="burger">
-                        <li> <a href="#" class="nav-button">ABOUT</a> </li>
-                        <li> <a href="#" class="nav-button">SKILLS</a> </li>
-                        <li> <a href="#" class="nav-button">PROJECTS</a> </li>
-                        <li> <a href="#" class="nav-button">CONTACT</a> </li>
+                        <li> <a href="index.php" class="nav-button">HOME</a> </li>
+                        <li> <a href="#skills" class="nav-button">SKILLS</a> </li>
+                        <li> <a href="#projects" class="nav-button">PROJECTS</a> </li>
+                        <li> <a href="contact.html" class="nav-button">CONTACT</a> </li>
                     </ul>
                 </nav>
             </div>

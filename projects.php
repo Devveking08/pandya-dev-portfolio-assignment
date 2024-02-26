@@ -15,73 +15,12 @@ $stmt = null;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $row['title']; ?></title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        p {
-            max-width: 800px;
-            margin-bottom: 40px;
-            color: #555;
-        }
-
-        .project-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .portfolio-image {
-            width:80%;
-            max-width: 700px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .portfolio-image:hover {
-            transform: scale(1.1);
-        }
-
-        /* back btn stylizeing */
-
-        .back-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: red;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        .back-button:hover {
-            background-color: black;
-        }
-    </style>
     <link rel="stylesheet" href="css/grid.css" >
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
-
+<main id="project-info">
 
 <h1><?php echo $row['title']; ?></h1>
 
@@ -102,6 +41,6 @@ echo '<img class="portfolio-image" src="images/'.$images[$i].'" alt="Project Ima
 
 </section>
 <a href="index.php" class="back-button">Back to Home</a>
-
+</main>
 </body>
 </html>
