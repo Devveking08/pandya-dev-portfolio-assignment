@@ -42,19 +42,21 @@
     }
 
 
-
-
-    
-
-   
-    .skills img {
-    display: inline-block;
-    margin: 15px;
-    opacity: 1; 
-    transition: opacity 0.3s ease;
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-
+    
+    .skills img {
+        display: inline-block;
+        margin: 15px;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    
     .skills img:hover {
-    opacity: 0.5;
-     }
+        opacity: 0.5;
+    }
     
