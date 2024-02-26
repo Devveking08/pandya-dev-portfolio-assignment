@@ -1,4 +1,4 @@
-const form = document.querySelector("#driverForm");
+const form = document.querySelector("#contactForm");
 const feedBack = document.querySelector("#feedback");
 
 function regForm(event) {
@@ -12,8 +12,8 @@ function regForm(event) {
   thisform.elements.fname.value +
   "&e_mail=" +
   thisform.elements.email.value +
-  "&Subject=" +
-  thisform.elements.Subject.value +
+  "&c_subject=" +
+  thisform.elements.c_subject.value +
   "&comments=" +
   thisform.elements.comments.value;
 
@@ -47,7 +47,7 @@ function regForm(event) {
       feedBack.innerHTML = "";
       const messageElement = document.createElement("p");
       messageElement.textContent =
-        "sorry,you must be using an older browser, that does not support AJAX";
+        "sorry, Browser not supported";
     });
 }
 
