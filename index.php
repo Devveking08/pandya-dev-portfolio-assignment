@@ -116,14 +116,24 @@ $stmt->execute();
     <footer>
         <section class="grid-con" id="footer">
             <div class="col-span-4 l-col-span-12 xl-col-span-12"><h1 class="hidden">CONTACT</h1></div>
-            <div class="col-span-4 l-col-span-5 xl-col-span-5 box"><h3> Social Media: </h3>
+            <div class="col-span-4 l-col-span-5 xl-col-span-5 box ">
+            <h3> Social Media: </h3>
+            <div class="social-media">
+            <a href="https://ca.pinterest.com/Specter0301/" target="_blank">
                 <img src="images/Pintrest.png" height="50px" width="50px" alt="Pintrest-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/dev-pandya-654320266/" target="_blank">
                 <img src="images/Linkdin.png" height="50px" width="50px" alt="Linkdin-logo">
+            </a>
+            <a href="https://github.com/Devveking08/pandya-dev-portfolio-assignment" target="_blank">
                 <img src="images/Git-hub.png" height="50px" width="50px" alt="Git-hub-logo">
+            </a>
             </div>
+            </div>
+
             <div class="col-span-4 l-col-span-1 xl-col-span-1 "></div>
-            <div class="col-span-4 l-col-span-6 xl-col-span-6 box"><h3>Inquires</h3><br>
-                <p>Email: devpandya750@gmal.com<p>
+            <div class="col-span-4 l-col-span-6 xl-col-span-6 box"><h3>Download Resume</h3><br>
+                <img src="images/resume.png" height="50px" width="50px" alt="Resume">
             </div>
 
             <div class="col-span-2 l-col-span-3 xl-col-span-3"><img src="images/Dev_Pandya_Logo.png" alt="logo" height="100" width="140px"></div>
