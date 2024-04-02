@@ -23,6 +23,30 @@
     hamburger.addEventListener("click", function () {
       mobileNav.classList.toggle("show");
     });
+
+
+
+    var skillIcons = document.querySelectorAll('.skill-icon');
+    var infoBoxText = document.querySelector('#info-text');
+
+    skillIcons.forEach(function(icon) {
+        icon.addEventListener('mouseenter', function() {
+            var text = icon.getAttribute('data-info');
+            gsap.to(infoBoxText, {
+                text: text,
+                duration: 3,
+                ease: "power1.inOut"
+            });
+        });
+
+        icon.addEventListener('mouseleave', function() {
+            gsap.to(infoBoxText, {
+                text: "",
+                duration: 3,
+                ease: "power1.inOut"
+            });
+        });
+    });
   
   })();
   
