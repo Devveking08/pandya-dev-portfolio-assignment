@@ -90,9 +90,6 @@
     }
 
 
-
-
-
     footer {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -102,11 +99,21 @@
     border: 1px solid red;
     margin: 20px 0; 
     transform: translateX(-50%) rotate(90deg);
+
+
     }
 
     #footer img {
     margin-right: auto;
     }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
 
     #footer img:hover {
     text-decoration: underline ;
