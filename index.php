@@ -79,15 +79,19 @@ $stmt->execute();
         <h1>WHAT I KNOW  </h1>
         <hr>
         <section class="grid-con" id="skills">
-            <div class="col-span-4 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 skills ">
-                <br>
-                <img src="images/php.png" height="50px" width="50px" alt="php-logo">
-                <img src="images/html-5.png" height="50px" width="50px" alt="html-5 icon">
-                <img src="images/css-3.png" height="50px" width="50px" alt="html-5 icon">
-                <img src="images/js.png" height="50px" width="50px" alt="html-5 icon">
-                <img src="images/creative-cloud.png" height="50px" width="50px" alt="html-5 icon">
-            </div>
-        </section>
+        <div class="col-span-4 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 skills">
+        <br>
+        <img src="images/php.png" height="50px" width="50px" alt="php-logo" class="skill-icon" data-info="PHP: Hypertext Preprocessor is a server-side scripting language designed for Web development, but also used as a general-purpose programming language.">
+        <img src="images/html-5.png" height="50px" width="50px" alt="html-5 icon" class="skill-icon" data-info="HTML5:  The latest version of Hypertext Markup Language, the code that describes web pages.">
+        <img src="images/css-3.png" height="50px" width="50px" alt="css-3 icon" class="skill-icon" data-info="CSS3: Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.">
+        <img src="images/js.png" height="50px" width="50px" alt="js icon" class="skill-icon" data-info="JavaScript:  A programming language that enables you to create dynamically updating content, control multimedia, animate images, and much more.">
+        <img src="images/creative-cloud.png" height="50px" width="50px" alt="creative cloud icon" class="skill-icon" data-info="Creative Cloud:  Adobe Creative Cloud is a set of applications and services from Adobe Inc. that gives subscribers access to a collection of software used for graphic design, video editing, web development, photography, and more.">
+    </div>
+    <div id="info-box" class="col-span-4 l-col-start-5 l-col-end-10  xl-col-start-5 xl-col-end-10 ">
+        <div id="info-text"></div>
+    </div>
+    </section>
+
         <hr>
         <h1>PROJECTS </h1>
         <hr>
