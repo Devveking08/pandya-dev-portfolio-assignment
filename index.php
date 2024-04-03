@@ -95,13 +95,13 @@ $stmt->execute();
         <hr>
         <h1>PROJECTS </h1>
         <hr>
-        <section class="grid-con" id="projects">
+        <section  class="grid-con" id="projects">
        
         <?php
 
           while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
-            echo  '<section class=" l-col-span-5 l-col-end-10 col-span-4"><h3>'.$row['title'].'</h3><a href="projects.php?id='.
+            echo  '<section class="col-span-4"><h3>'.$row['title'].'</h3><a href="projects.php?id='.
             $row['id'].
            '"><img class="thumbnail" src="images/'.    
           $row['image_url'].   
