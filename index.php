@@ -137,7 +137,9 @@ $stmt->execute();
 
             <div class="col-span-4 l-col-span-1 xl-col-span-1 "></div>
             <div class="col-span-4 l-col-span-6 xl-col-span-6 box"><h3>Download Resume</h3><br>
+            <a href="https://devpandya.com/reume.jpg" download target="_blank">
                 <img src="images/resume.png" height="50px" width="50px" alt="Resume">
+            </a>
             </div>
 
             <div class="col-span-2 l-col-span-3 xl-col-span-3"><img src="images/Dev_Pandya_Logo.png" alt="logo" height="100" width="140px"></div>
