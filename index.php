@@ -63,7 +63,7 @@ $stmt->execute();
         <section class="grid-con" id="about">
             <div class="col-span-4 l-col-start-3 l-col-end-6 xl-col-start-2 xl-col-end-6 ">
                 <h1> Dev Pandya </h1>
-                <h4><b>FRONT-END DEVELOPER & PROJECT MANAGER </b></h4>
+                <h4><b>FRONT-END DEVELOPER & DESIGNER </b></h4>
                 
         </div>    
         </section>
@@ -101,7 +101,7 @@ $stmt->execute();
 
           while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
-            echo  '<section class="col-span-4"><h3>'.$row['title'].'</h3><a href="projects.php?id='.
+            echo  '<section class=" col-span-4"><h3>'.$row['title'].'</h3><a href="projects.php?id='.
             $row['id'].
            '"><img class="thumbnail" src="images/'.    
           $row['image_url'].   
