@@ -13,7 +13,7 @@
       .from(".circular-profile-pic", { opacity: 0, duration: 2 })
       .add(typeText(infoParagraph, "<h1> Hello </h1>", 5))
       .add(typeText(infoParagraph, "<h1> bonjour </h1>", 5))
-      .add(typeText(infoParagraph, "I'm a versatile Front-End Developer and Project Manager with a passion for crafting immersive digital experiences. With a keen eye for design and a knack for project management, I bring creativity and efficiency to every endeavor, ensuring seamless execution and exceptional results in the world of web development. ", 7));
+      .add(typeText(infoParagraph, "As a versatile Front-End Developer and Designer, I'm driven by a passion for creating captivating digital experiences. Combining my eye for design with adept project management skills, I strive to infuse creativity and efficiency into every project. With a focus on seamless execution, I aim to deliver exceptional results in the dynamic realm of web development.", 7));
   
   
   

@@ -4,60 +4,71 @@
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     color: #333;
-    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-
-    h1 {
-        margin-bottom: 20px;
-        color: #333;
-    }
+    text-align: left;
     
-    p {
-        max-width: 800px;
-        margin-bottom: 40px;
-        color: #555;
-    }
-    
-    .project-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .portfolio-image {
-        width:80%;
-        max-width: 700px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .portfolio-image:hover {
-        transform: scale(1.1);
-    }
-    
-    /* back btn stylizeing */
-    
-    .back-button {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 20px;
-        background-color: red;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease-in-out;
-    }
-    
-    .back-button:hover {
-        background-color: black;
-    }
 }
 
+#project-info h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+#project-info p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px; 
+    width: 10px; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent);
+    z-index: -1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
