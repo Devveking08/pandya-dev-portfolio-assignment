@@ -17,6 +17,14 @@ $stmt = null;
     <title><?php echo $row['title']; ?></title>
     <link rel="stylesheet" href="css/grid.css" >
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/TextPlugin.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
+    <script src="js/SplitText.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/form.js" defer></script>
+
 
 </head>
 <body>
@@ -89,7 +97,6 @@ echo '<img class="portfolio-image" src="images/'.$images[$i].'" alt="Project Ima
 ?>
 </div>
 </section>
-<a href="index.php" class="back-button">Back to Home</a>
 </main>
 
 <footer style="margin-top: 20px;">

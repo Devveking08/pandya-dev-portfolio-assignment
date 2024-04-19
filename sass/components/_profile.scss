@@ -1,7 +1,7 @@
 .circular-profile-pic {
     width: 276px;
     height: 277px;
-    background-image: url("../images/profile-pic.jpeg");
+   background-image: url("../images/main_pic.jpg"); 
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -19,10 +19,12 @@
 
     #info p{
         font-size: 23px;
+        text-align:center;
     }
 
     #about  {
-    background: url('../images/main.png') no-repeat center center fixed;
+    /* background: url('../images/main.png') no-repeat center center fixed; */
+    background:linear-gradient(red 50%, white 10%, black 40%) no-repeat center center fixed; 
     background-size: cover;
     padding-top: 40px; 
     padding-bottom: 40px;
